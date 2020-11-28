@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.activity.Login">
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/et_background"
+            android:padding="2dp"
+            android:textColorHint="#fff"
+            app:endIconTint="@color/blue"
+            app:endIconMode="custom"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email_login"
+                android:imeActionLabel="@string/title_email_login"
+                android:inputType="text"
+                android:textColor="@color/blue"
+                android:textColorHighlight="#fff"
+                android:textColorHint="#fff"
+                android:textSize="14sp"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--            android:drawableLeft="@drawable/ic_mail"-->
+        <!--            android:drawableRight="@drawable/ic_check_login_grey"-->
+        <!--            android:drawablePadding="4dp"-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#fff"
+            android:background="@drawable/et_background"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_lockpass"
+            app:passwordToggleTint="@color/blue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password_login"
+                android:imeActionLabel="@string/title_password_login"
+                android:inputType="textPassword"
+                android:textColor="@color/blue"
+                android:textColorHighlight="#fff"
+                android:textColorHint="#fff"
+                android:textSize="14sp"
+                android:imeOptions="actionDone"
+                />
+            <!--                android:drawableLeft="@drawable/ic_lockpass"-->
+            <!--                android:drawablePadding="4dp"-->
+            <!--                android:drawableRight="@drawable/ic_smalleye"-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox_remember_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="4dp"
+            android:layout_gravity="start"
+            android:text="@string/remember_me"
+            android:textSize="@dimen/text_medium"/>
+
+        <Button
+            android:id="@+id/btn_signin"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/button_text"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

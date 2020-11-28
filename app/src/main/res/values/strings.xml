@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="title_email_login">Email</string>
+    <string name="hint_email_login">Please insert your email</string>
+    <string name="title_password_login">Password</string>
+    <string name="hint_password_login">Please insert your password</string>
+    <string name="button_text">Go to register</string>
+
+    <string name="empty_email">Please input your email</string>
+    <string name="empty_password">Please input your password</string>
+
+    <string name="title_name_register">Name</string>
+    <string name="hint_name_register">Please insert your Name</string>
+    <string name="title_gender_register">Gender</string>
+    <string name="hint_gender_register">Please insert your gender</string>
+    <string name="title_nohp_register">Mobile Phone</string>
+    <string name="hint_nohp_register">Please insert your mobile number</string>
+    <string name="button_register">Login</string>
+
+    <string name="button_logout">Logout</string>
+
+    <string name="empty_name">Please input your name</string>
+    <string name="empty_gender">Please input your gender</string>
+    <string name="empty_nohp">Please input your mobile number</string>
+
+
+    <string name="remember_me">Remember me</string>
+    <string name="fragment_home_title">Home</string>
+    <string name="fragment_profile_title">Profile</string>
+    <string name="fragment_home_cardview">My Apps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
